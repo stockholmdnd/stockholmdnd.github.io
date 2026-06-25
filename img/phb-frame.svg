@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PHB-style decorative frame.
+     - Top corners: concave "bite" arcs (outer radius 12, inner radius 4).
+     - Bottom corners: 45 degree chamfered cuts (outer cut 13, inner
+       cut 5). Bottom edges share y=95 so the two horizontal lines
+       merge there.
+     - Three subtle darker tints in the air gaps along the top, left,
+       and right edges. The four corners and the bottom edge are not
+       tinted. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <!-- Top air gap (between outer y=1 and inner y=4). -->
+  <rect x="13" y="1" width="70" height="3"
+        fill="#6a5b48" fill-opacity="0.18" stroke="none"/>
+  <!-- Left air gap (between outer x=1 and inner x=4). -->
+  <rect x="1" y="13" width="3" height="69"
+        fill="#6a5b48" fill-opacity="0.18" stroke="none"/>
+  <!-- Right air gap (between inner x=92 and outer x=95). -->
+  <rect x="92" y="13" width="3" height="69"
+        fill="#6a5b48" fill-opacity="0.18" stroke="none"/>
+
+  <!-- Outer (slimmer). -->
+  <path d="M 13,1 L 83,1 A 12,12 0 0 0 95,13 L 95,82 L 82,95 L 14,95 L 1,82 L 1,13 A 12,12 0 0 0 13,1 Z"
+        fill="none" stroke="#c9954a" stroke-width="1"/>
+  <!-- Inner (thicker). Bottom y=95 same as outer so they overlap there. -->
+  <path d="M 8,4 L 88,4 A 4,4 0 0 0 92,8 L 92,90 L 87,95 L 9,95 L 4,90 L 4,8 A 4,4 0 0 0 8,4 Z"
+        fill="none" stroke="#c9954a" stroke-width="1.6"/>
+</svg>
